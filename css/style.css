@@ -1,0 +1,64 @@
+body {
+    background-color: #f3e9f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    border-radius: 15px;
+}
+.header__logo {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    margin-left: 10px;
+}
+.logo_img {
+    width: auto;
+    height: 80px;
+    border-radius: 15px;
+}
+.header__tittle {
+    font-size: 3em;
+}
+.header__cart {
+    background-color: #f3e9f1;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 0 20px;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    height: auto;
+}
+.container__bloc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 550px;
+    width: 500px;
+    border: 1px solid #c3c3c3;
+    background-color: #fff;
+    overflow: hidden;
+    margin: 30px 0;
+    border-radius: 15px;
+}
+#img {
+    height: 470px;
+}
