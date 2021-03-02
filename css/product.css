@@ -1,0 +1,136 @@
+body {
+    background-color: #f3e9f1;
+    font-family: 'Architects Daughter', cursive;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    border-radius: 15px;
+    max-width: 1400px;
+}
+.header__logo {
+    display: flex;
+    height: 110px;
+    align-items: center;
+    margin: 0px 20px;
+    transition: transform 0.5s;
+}
+.header__logo:hover {
+    transform: scale(1.1)
+}
+.logo_img {
+    width: auto;
+    height: 80px;
+    border-radius: 15px;
+}
+.header__tittle {
+    font-size: 3.5em;
+    margin: 0;
+}
+.header__cart {
+    background-color: #f3e9f1;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    margin: 0px 20px;
+    border-radius: 15px;
+    padding: 0 20px;
+    font-size: 1.7em;
+    transition: transform 0.5s;
+}
+.header__cart:hover {
+    transform: scale(1.1)
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    margin: auto;
+    max-width: 1400px;
+    height: auto;
+    background-color: #ffffff;
+    font-family: 'Comfortaa', cursive;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.container__img {
+    height: 700px;
+    overflow: hidden;
+    width: 100%;
+}
+.imageUrl {
+    position: relative;
+    top : 50%;           
+    left : 50%;          
+    margin-top : -350px;  
+    margin-left : -500px; 
+    display : block;
+    width : auto;
+    height : 700px;
+}
+.container__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 700px;
+    font-size: 1.5em;
+    padding: 0 20px;
+    width: 100%;
+}
+.personnalisation {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.choix {
+    padding-top: 5px;
+}
+.lenses {
+    margin: 0 5px;
+    padding: 3px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1em;
+    background-color: #ffffff;
+    border: 1px solid #d3d2d2;
+    cursor: pointer;
+    transition: border-color  0.1s;
+    transition: border-width  0.1s;
+}
+.lenses:hover {
+    border-color: black;
+    border-width: 2px;
+}
+.clicked {
+    margin: 0 5px;
+    padding: 3px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1em;
+    background-color: #ffffff;
+    border: 1px solid #d3d2d2;
+    cursor: pointer;
+    border-color: black;
+    border-width: 2px;
+}
+.addCart {
+    padding: 10px 20px;
+    background-color: #f3e9f1;
+    border: 0.5px solid rgb(201, 201, 201);
+    border-radius: 30px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.addCart:hover {
+    transform: scale(1.1);
+}

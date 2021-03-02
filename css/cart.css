@@ -47,42 +47,46 @@ header {
 .header__cart:hover {
     transform: scale(1.1)
 }
-.container {
+.cart__container {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-wrap: nowrap;
+    align-items: stretch;
     margin: auto;
     width: 90%;
     height: auto;
 }
-.container__bloc {
+.container_cart {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 550px;
-    width: 500px;
-    border: 1px solid #c3c3c3;
-    background-color: #fff;
-    overflow: hidden;
-    margin: 30px 20px;
-    border-radius: 15px;
-    font-family: 'Comfortaa', cursive;
-    transition: transform 0.5s;
+    margin: 0;
+    width: 100%;
 }
-.container__bloc:hover {
-    transform: scale(1.1)
+.cart_ul_head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-left: 100px;
+}
+.name_head {
+    padding-left: 90px;
+}
+.qty_head {
+    padding-left: 40px;
+}
+.cart_ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}   
+.image {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
 }
 .imageUrl {
-    margin-top: 0;
-    height: 470px;
-}
-.name {
-    margin: 0;
-    font-size: 1.6em;
-}
-.price {
-    margin: 0 0 5px 0;
-    font-size: 1.5em;
+    height: 200px;
+    width: auto;
 }
