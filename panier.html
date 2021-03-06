@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Panier</title>
     <link rel="stylesheet" href="css/cart.css">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Comfortaa:wght@500&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9b0f4b06bf.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
     <header>
         <div class="header__logo">
@@ -16,20 +22,33 @@
         <a href="panier.html" class="header__cart">
             <div class="cart_text">Mon panier</div>
         </a>
-        
+
     </header>
-    <section class="cart__container">
+    <section class="container">
         <div class="container_cart">
-            <ul class="cart_ul_head">
-                <li class="ul_head">Image</li>
-                <li class="ul_head name_head">Nom</li>
-                <li class="ul_head qty_head">Quantité</li>
-                <li class="ul_head">Prix</li>
-            </ul>
+                <div class="cart_div">
+                    <div class="div_itemHead">Image</div>
+                    <div class="div_itemHead">Nom</div>
+                    <div class="div_itemHead">Quantité</div>
+                    <div class="div_itemHead">Prix</div>
+                </div>
+            </div>
+        </div>
+        <div class="container_form">
+            <form action="" method="POST" id="form">
+                <label for="nom">Nom :</label> <br><input type="text" name="nom" id="firstName"><br>
+                <label for="prenom">Prénom :</label> <br><input type="text" name="prenom" id="lastName"><br>
+                <label for="adresse">Adresse :</label> <br><input type="text" name="Adresse" id="adress"><br>
+                <label for="ville">Ville :</label> <br><input type="text" name="ville" id="city"><br>
+                <label for="zipcode">Code postal :</label> <br><input type="text" name="zipcode" id="zipcode">
+                <label for="email">Adresse e-mail :</label> <br><input type="email" name="email" id="email"><br>
+                <input id='form-btn'type="submit" value="Valider la commande">
+            </form>
         </div>
 
     </section>
-    
-    <script src="js/cart.js"></script>  
+
+    <script src="js/cart.js"></script>
 </body>
+
 </html>

@@ -16,9 +16,8 @@ header {
 }
 .header__logo {
     display: flex;
-    height: 110px;
-    align-items: center;
-    margin: 0px 20px;
+    height: 80px;
+    margin: 15px 15px;
     transition: transform 0.5s;
 }
 .header__logo:hover {
@@ -38,7 +37,7 @@ header {
     display: flex;
     height: 80px;
     align-items: center;
-    margin: 0px 20px;
+    margin: 15px 15px;
     border-radius: 15px;
     padding: 0 20px;
     font-size: 1.7em;
@@ -47,46 +46,122 @@ header {
 .header__cart:hover {
     transform: scale(1.1)
 }
-.cart__container {
+
+/************Liste Produits*************/
+
+.container {
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
-    align-items: stretch;
+    align-items: center;
     margin: auto;
-    width: 90%;
     height: auto;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.3rem;
 }
 .container_cart {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    width: 100%;
+    margin: 0 10px;
+    width: 75%;
 }
-.cart_ul_head {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
-    padding-left: 100px;
-}
-.name_head {
-    padding-left: 90px;
-}
-.qty_head {
-    padding-left: 40px;
-}
-.cart_ul {
+.cart_div {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
     justify-content: space-around;
+    padding-left: 0;
 }   
+.div_itemHead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 50px;
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.div_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 150px;
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+}
 .image {
-    height: 200px;
-    width: 200px;
     overflow: hidden;
+    background-color: black;
 }
 .imageUrl {
-    height: 200px;
+    height: 170px;
     width: auto;
+}
+.quantity {
+    width: 40px;
+    height: 30px;
+    font-size: 1.3rem;
+    border: none;
+}
+input[type=number] {
+    padding: 2px;
+}
+.price {
+    padding-left: 30px;
+}
+.deleteButton {
+    background-color: #ffffff;
+    border: 0px transparent;
+    width: 10px;
+    height: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding-left: 30px;
+}
+.cart_divTotal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 0;
+} 
+.totalPrice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24%;
+    height: 50px;
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/**************Formulaire**************/
+
+.container_form {
+    width: 25%;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form>label, form>input {
+    margin: 5px;
+}
+#form-btn {
+    background-color: rgb(109, 62, 161);
+    color: #fff;
+    padding: 10px;
+    font-family: inherit;
+    border: 2px solid rgb(109, 62, 161);
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
 }

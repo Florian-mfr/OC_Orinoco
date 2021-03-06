@@ -13,8 +13,6 @@ function main(){
 
                 const product = products[i]
 
-                
-
                 const $a = document.createElement('a')
                 $a.className = 'productLinks'
                 $productList.appendChild($a)

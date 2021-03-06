@@ -85,15 +85,15 @@ function main() {
                     } else {
                         cartStorage = JSON.parse(cartStorage)
                     }
-                    let verifyId = cartStorage.findIndex(function(Object) {
+                    let verifyId = cartStorage.findIndex(function (Object) {
                         if (Object._id == id) {
                             return true
                         } return false
                     })
-                    if ( verifyId !== -1 ) {
+                    if (verifyId !== -1) {
                         /*let productQuantity = cartStorage.findIndex(function(Object){Object.quantity})
-                        cartStorage.splice(3, 0, +1)
-                        window.localStorage.florian_maffre_orinoco = JSON.stringify(cartStorage)*/
+                        cartStorage.splice(i.3, 0, +1)*/
+                        window.localStorage.florian_maffre_orinoco = JSON.stringify(cartStorage)
                         alert('Le produit est déjà dans votre panier.')
                     } else {
                         cartStorage.push({
@@ -105,11 +105,10 @@ function main() {
                         });
                         window.localStorage.florian_maffre_orinoco = JSON.stringify(cartStorage)
                     }
-
-
-
-                    console.log(cartStorage)
-                    console.log(verifyId)
+                    function cartLink(){
+                        document.location.href="panier.html"
+                      }
+                    cartLink()
                 })
 
             })
