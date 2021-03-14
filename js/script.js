@@ -1,5 +1,7 @@
 console.log(localStorage.florian_maffre_orinoco)
 
+/************* Appel de l'API et affichage de la liste de produit  ************/
+
 function main(){
 
     fetch("http://localhost:3000/api/cameras")
@@ -45,7 +47,7 @@ function main(){
         })
     })
     .catch(error => {
-        console.log('error: ' + error)
+        console.log(error)
     })
     }
 

@@ -6,20 +6,21 @@ a {
     text-decoration: none;
     color: #000;
 }
+
+/********* header *********/
+
 header {
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px auto;
+    margin: 20px;
     border-radius: 15px;
-    max-width: 1400px;
 }
 .header__logo {
     display: flex;
-    height: 110px;
-    align-items: center;
-    margin: 0px 20px;
+    height: 80px;
+    margin: 15px 15px;
     transition: transform 0.5s;
 }
 .header__logo:hover {
@@ -39,7 +40,7 @@ header {
     display: flex;
     height: 80px;
     align-items: center;
-    margin: 0px 20px;
+    margin: 15px 15px;
     border-radius: 15px;
     padding: 0 20px;
     font-size: 1.7em;
@@ -48,6 +49,9 @@ header {
 .header__cart:hover {
     transform: scale(1.1)
 }
+
+/********** product **********/
+
 .container {
     display: flex;
     flex-direction: row;
@@ -60,6 +64,7 @@ header {
     background-color: #ffffff;
     font-family: 'Comfortaa', cursive;
     border-radius: 15px;
+    box-shadow: 0 3px 5px #c9caccd2;
     overflow: hidden;
 }
 .container__img {
@@ -133,4 +138,42 @@ header {
 }
 .addCart:hover {
     transform: scale(1.1);
+}
+
+/********** media queries ***********/
+
+@media screen and (max-width: 950px) {
+    header {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .header__tittle {
+        display: none;
+    }
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+    .container__img {
+        display: flex;
+        justify-content: center;
+        height: 350px;
+        background-color: #000;
+    }
+    .imageUrl {
+        height: 400px;
+        top : 0;           
+        left : 0;          
+        margin-top : -50px;  
+        margin-left : 0px;
+    }
+    .container__text {
+        height: 500px;
+    }
+    .name {
+        margin-bottom: 0;
+    }
+    .description {
+        margin: 0 10px;
+    }
 }

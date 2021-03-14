@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Panier</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Comfortaa:wght@500&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9b0f4b06bf.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header__logo">
+            <a href="index.html"><img src="images/logo.png" alt="logo orinoco" class="logo_img"></a>
+        </div>
+        <div class="header__tittle">Caméras vintage</div>
+        <a href="panier.html" class="header__cart">
+            <div class="cart_text">Mon panier</div>
+        </a>
+
+    </header>
+    <section id="order_container">
+        <p>Félicitation votre commande n° <span id='commandId'></span> à bien été prise en compte</p>
+    </section>
+    <script src="js/orderStatus.js"></script>
+</body>

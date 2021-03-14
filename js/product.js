@@ -1,10 +1,12 @@
+/************ Récuperation de l'id du produit ************/
+
 function getProductId() {
     return new URL(window.location.href).searchParams.get('id')
 }
 
 
 let productId = getProductId()
-
+/************* *Affichage page produit  ****************/
 function main() {
 
     fetch('http://localhost:3000/api/cameras/' + productId)
@@ -75,6 +77,7 @@ function main() {
                 $addCart.textContent = 'Ajouter au panier'
                 $divText.appendChild($addCart)
 
+                /********** Ajout du produit au panier ************/
 
                 $addCart.addEventListener('click', () => {
 
@@ -91,8 +94,6 @@ function main() {
                         } return false
                     })
                     if (verifyId !== -1) {
-                        /*let productQuantity = cartStorage.findIndex(function(Object){Object.quantity})
-                        cartStorage.splice(i.3, 0, +1)*/
                         window.localStorage.florian_maffre_orinoco = JSON.stringify(cartStorage)
                         alert('Le produit est déjà dans votre panier.')
                     } else {

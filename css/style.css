@@ -6,6 +6,9 @@ a {
     text-decoration: none;
     color: #000;
 }
+
+/****** header ******/
+
 header {
     background-color: #ffffff;
     display: flex;
@@ -16,9 +19,9 @@ header {
 }
 .header__logo {
     display: flex;
-    height: 110px;
-    align-items: center;
-    margin: 0px 20px;
+    height: 80px;
+    width: auto;
+    margin: 15px 15px;
     transition: transform 0.5s;
 }
 .header__logo:hover {
@@ -37,8 +40,9 @@ header {
     background-color: #f3e9f1;
     display: flex;
     height: 80px;
+    width: 140px;
     align-items: center;
-    margin: 0px 20px;
+    margin: 15px 15px;
     border-radius: 15px;
     padding: 0 20px;
     font-size: 1.7em;
@@ -47,6 +51,9 @@ header {
 .header__cart:hover {
     transform: scale(1.1)
 }
+
+/******* container ********/
+
 .container {
     display: flex;
     justify-content: space-around;
@@ -69,6 +76,7 @@ header {
     margin: 30px 20px;
     border-radius: 15px;
     font-family: 'Comfortaa', cursive;
+    box-shadow: 0 3px 5px #c9caccd2;
     transition: transform 0.5s;
 }
 .container__bloc:hover {
@@ -85,4 +93,52 @@ header {
 .price {
     margin: 0 0 5px 0;
     font-size: 1.5em;
+}
+
+/******** media queries ********/
+
+@media screen and (max-width: 950px) {
+    header {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .header__tittle {
+        display: none;
+    }
+    .container {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .productLinks {
+        width: 90%;
+        max-width: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 400px;
+        border: 1px solid #c3c3c3;
+        background-color: #fff;
+        overflow: hidden;
+        margin: 15px 0px;
+        border-radius: 15px;
+        font-family: 'Comfortaa', cursive;
+        transition: transform 0.5s;
+    }
+    .productLinks:hover {
+        transform: scale(1.1)
+    }
+    .container__bloc {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .container__bloc:hover {
+        transform: scale(1)
+    }
+    .imageUrl {
+        margin-top: 0;
+        height: 320px;
+    }
+    
 }

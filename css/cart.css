@@ -6,6 +6,9 @@ a {
     text-decoration: none;
     color: #000;
 }
+
+/********* header **********/
+
 header {
     background-color: #ffffff;
     display: flex;
@@ -53,7 +56,6 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
-    align-items: center;
     margin: auto;
     height: auto;
     font-family: 'Comfortaa', cursive;
@@ -82,6 +84,7 @@ header {
     margin: 5px;
     background-color: #fff;
     border-radius: 10px;
+    box-shadow: 0 3px 5px #c9caccd2;
 }
 .div_item {
     display: flex;
@@ -92,6 +95,7 @@ header {
     margin: 5px;
     background-color: #fff;
     border-radius: 10px;
+    box-shadow: 0 3px 5px #c9caccd2;
 }
 .image {
     overflow: hidden;
@@ -139,6 +143,7 @@ input[type=number] {
     margin: 5px;
     background-color: #fff;
     border-radius: 10px;
+    box-shadow: 0 3px 5px #c9caccd2;
 }
 
 /**************Formulaire**************/
@@ -148,12 +153,18 @@ input[type=number] {
 }
 form {
     display: flex;
+    margin-top: 30px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 form>label, form>input {
-    margin: 5px;
+    margin-top: 15px;
+}
+div>input {
+    height: 25px;
+    border-radius: 5px;
+    width: 150px;
 }
 #form-btn {
     background-color: rgb(109, 62, 161);
@@ -164,4 +175,74 @@ form>label, form>input {
     border-radius: 5px;
     margin-top: 20px;
     cursor: pointer;
+}
+.validIcon {
+    display: none;
+    position: relative;
+    font-size: 14px;
+    top: 1px;
+    right: 18px;
+    color: rgb(69, 184, 69);
+}
+.errorIcon {
+    display: none;
+    position: relative;
+    font-size: 14px;
+    top: 1px;
+    right: 31px;
+    color: red;
+}
+/********** orderStatus ***********/
+
+#order_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.3rem;
+}
+
+/********* media queries ***********/
+
+@media screen and (max-width: 950px) {
+    header {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .header__tittle {
+        display: none;
+    }
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+    .container_cart {
+        width: 100%;
+    }
+    .image, .imageHead {
+        display: none;
+    }
+    .div_itemHead {
+        width: 33%;
+    }
+    .div_item {
+        height: 50px;
+        width: 33%;
+    }
+    .price {
+        padding: 0;
+    }
+    .deleteButton {
+        padding-bottom: 10px;
+        padding-left: 5px;
+    }
+    .totalPrice {
+        width: 31%;
+    }
+    .container_form {
+        width: 100%;
+    }
+    #form {
+        position: inherit;
+    }
 }

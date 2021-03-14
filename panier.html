@@ -18,7 +18,7 @@
         <div class="header__logo">
             <a href="index.html"><img src="images/logo.png" alt="logo orinoco" class="logo_img"></a>
         </div>
-        <div class="header__tittle">Mon panier</div>
+        <h1 class="header__tittle">Mon panier</h1>
         <a href="panier.html" class="header__cart">
             <div class="cart_text">Mon panier</div>
         </a>
@@ -27,7 +27,7 @@
     <section class="container">
         <div class="container_cart">
                 <div class="cart_div">
-                    <div class="div_itemHead">Image</div>
+                    <div class="div_itemHead imageHead">Image</div>
                     <div class="div_itemHead">Nom</div>
                     <div class="div_itemHead">Quantité</div>
                     <div class="div_itemHead">Prix</div>
@@ -36,13 +36,25 @@
         </div>
         <div class="container_form">
             <form action="" method="POST" id="form">
-                <label for="nom">Nom :</label> <br><input type="text" name="nom" id="firstName"><br>
-                <label for="prenom">Prénom :</label> <br><input type="text" name="prenom" id="lastName"><br>
-                <label for="adresse">Adresse :</label> <br><input type="text" name="Adresse" id="adress"><br>
-                <label for="ville">Ville :</label> <br><input type="text" name="ville" id="city"><br>
-                <label for="zipcode">Code postal :</label> <br><input type="text" name="zipcode" id="zipcode">
-                <label for="email">Adresse e-mail :</label> <br><input type="email" name="email" id="email"><br>
-                <input id='form-btn'type="submit" value="Valider la commande">
+                <label for="nom">Prénom :</label> <br><div>
+                    <input type="text" name="prenom" id="firstName" required='required'>
+                    </div><br>
+                <label for="prenom">Nom :</label> <br><div>
+                    <input type="text" name="nom" id="lastName" required='required'>
+                    </div><br>
+                <label for="adresse">Adresse :</label> <br><div>
+                    <input type="text" name="Adresse" id="adress" required='required'>
+                    </div><br>
+                <label for="ville">Ville :</label> <br><div>
+                    <input type="text" name="ville" id="city" required='required'>
+                    </div><br>
+                <label for="zipcode">Code postal :</label> <br><div>
+                    <input type="text" name="zipcode" id="zipcode" required='required'>
+                    </div><br>
+                <label for="email">Adresse e-mail :</label> <br><div>
+                    <input type="email" name="email" id="email" required='required'>
+                    </div><br>
+                <input id='form-btn'type="submit" value='Valider la commande'>
             </form>
         </div>
 
